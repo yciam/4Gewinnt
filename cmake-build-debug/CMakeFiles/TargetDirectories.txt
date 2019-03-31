@@ -1,0 +1,3 @@
+/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/4gewinnt.dir
