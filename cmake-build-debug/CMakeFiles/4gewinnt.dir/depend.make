@@ -21,6 +21,7 @@ CMakeFiles/4gewinnt.dir/src/Game.cpp.o: ../src/Game.cpp
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: ../src/Game.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: ../src/State.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: ../src/debug.hpp
+CMakeFiles/4gewinnt.dir/src/Game.cpp.o: ../src/utilities.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/SDL.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/SDL_assert.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/SDL_atomic.h
@@ -67,4 +68,21 @@ CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/SDL_version.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/SDL_video.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/begin_code.h
 CMakeFiles/4gewinnt.dir/src/Game.cpp.o: /usr/local/include/SDL2/close_code.h
+
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: ../src/utilities.cpp
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: ../src/utilities.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_blendmode.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_config.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_endian.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_error.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_pixels.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_platform.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_rect.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_render.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_rwops.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_stdinc.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_surface.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/SDL_video.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/begin_code.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o: /usr/local/include/SDL2/close_code.h
 

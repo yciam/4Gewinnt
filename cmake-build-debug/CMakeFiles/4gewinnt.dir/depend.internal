@@ -22,6 +22,7 @@ CMakeFiles/4gewinnt.dir/src/Game.cpp.o
  /Users/yellow/CLionProjects/4gewinnt/src/Game.h
  /Users/yellow/CLionProjects/4gewinnt/src/State.h
  /Users/yellow/CLionProjects/4gewinnt/src/debug.hpp
+ /Users/yellow/CLionProjects/4gewinnt/src/utilities.h
  /usr/local/include/SDL2/SDL.h
  /usr/local/include/SDL2/SDL_assert.h
  /usr/local/include/SDL2/SDL_atomic.h
@@ -65,6 +66,23 @@ CMakeFiles/4gewinnt.dir/src/Game.cpp.o
  /usr/local/include/SDL2/SDL_touch.h
  /usr/local/include/SDL2/SDL_ttf.h
  /usr/local/include/SDL2/SDL_version.h
+ /usr/local/include/SDL2/SDL_video.h
+ /usr/local/include/SDL2/begin_code.h
+ /usr/local/include/SDL2/close_code.h
+CMakeFiles/4gewinnt.dir/src/utilities.cpp.o
+ /Users/yellow/CLionProjects/4gewinnt/src/utilities.cpp
+ /Users/yellow/CLionProjects/4gewinnt/src/utilities.h
+ /usr/local/include/SDL2/SDL_blendmode.h
+ /usr/local/include/SDL2/SDL_config.h
+ /usr/local/include/SDL2/SDL_endian.h
+ /usr/local/include/SDL2/SDL_error.h
+ /usr/local/include/SDL2/SDL_pixels.h
+ /usr/local/include/SDL2/SDL_platform.h
+ /usr/local/include/SDL2/SDL_rect.h
+ /usr/local/include/SDL2/SDL_render.h
+ /usr/local/include/SDL2/SDL_rwops.h
+ /usr/local/include/SDL2/SDL_stdinc.h
+ /usr/local/include/SDL2/SDL_surface.h
  /usr/local/include/SDL2/SDL_video.h
  /usr/local/include/SDL2/begin_code.h
  /usr/local/include/SDL2/close_code.h

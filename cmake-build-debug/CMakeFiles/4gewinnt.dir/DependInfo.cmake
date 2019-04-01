@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/yellow/CLionProjects/4gewinnt/main.cpp" "/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/4gewinnt.dir/main.cpp.o"
   "/Users/yellow/CLionProjects/4gewinnt/src/Board.cpp" "/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/4gewinnt.dir/src/Board.cpp.o"
   "/Users/yellow/CLionProjects/4gewinnt/src/Game.cpp" "/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/4gewinnt.dir/src/Game.cpp.o"
+  "/Users/yellow/CLionProjects/4gewinnt/src/utilities.cpp" "/Users/yellow/CLionProjects/4gewinnt/cmake-build-debug/CMakeFiles/4gewinnt.dir/src/utilities.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -204,6 +204,33 @@ src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/4gewinnt.dir/build.make CMakeFiles/4gewinnt.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/utilities.o: src/utilities.cpp.o
+
+.PHONY : src/utilities.o
+
+# target to build an object file
+src/utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/4gewinnt.dir/build.make CMakeFiles/4gewinnt.dir/src/utilities.cpp.o
+.PHONY : src/utilities.cpp.o
+
+src/utilities.i: src/utilities.cpp.i
+
+.PHONY : src/utilities.i
+
+# target to preprocess a source file
+src/utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/4gewinnt.dir/build.make CMakeFiles/4gewinnt.dir/src/utilities.cpp.i
+.PHONY : src/utilities.cpp.i
+
+src/utilities.s: src/utilities.cpp.s
+
+.PHONY : src/utilities.s
+
+# target to generate assembly for a file
+src/utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/4gewinnt.dir/build.make CMakeFiles/4gewinnt.dir/src/utilities.cpp.s
+.PHONY : src/utilities.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/utilities.o"
+	@echo "... src/utilities.i"
+	@echo "... src/utilities.s"
 .PHONY : help
 
 

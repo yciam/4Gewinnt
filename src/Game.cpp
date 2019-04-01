@@ -5,6 +5,7 @@
 #include <SDL_ttf.h>
 #include "Game.h"
 #include "./definitions.hpp"
+#include "utilities.h"
 
 Game::Game() {
     // SDL Init
@@ -42,7 +43,6 @@ void Game::run() {
     while(this->running){
         SDL_SetRenderDrawColor(this->renner, 0, 10, 0, 0);
         SDL_RenderClear(this->renner);
-        DEB_MSG_1("12") //Warum funktioniert das nicht?
 
         this->handleEvents();
         this->draw(this->board);
@@ -82,29 +82,20 @@ void Game::draw(Board board) {
     SDL_GetWindowSize(win, &wx, &wy);
     for (auto y = 0; y < 7; y++) {
         for (auto x = 0; x < 6; x++) {
-            switch(this->board.getState(y+7*x)){
-                case State::BLANK:
-                    fieldColor = {100,100,100,0};
-                    break;
-                case State::RED:
-                    fieldColor = {200,50,0,0};
-                    break;
-                case State::YELLOW:
-                    fieldColor = {240,200,0,0};
-                    break;
-                default:
-                    DEB_ERR("Color assignment incorrect at " + _T(y+7*x))
-                    break;
-            }
+            fieldColor = {100,100,100,0};
             picsize = (wx < wy ? wx : wy) / 7;
             yr = picsize == wy / 7 ? (wx - wy) / 2 : 0;
             xr = picsize == wy / 7 ? 0 : (wy - wx) / 2;
-
             SDL_Rect dst = {y * (picsize) + yr, x * (picsize) + xr + picsize/2, picsize, picsize};
             SDL_SetRenderDrawColor(renner, fieldColor.r, fieldColor.g, fieldColor.b, SDL_ALPHA_OPAQUE);
             SDL_RenderFillRect(renner, &dst);
             SDL_SetRenderDrawColor(renner, 255, 255, 255, SDL_ALPHA_OPAQUE);
             SDL_RenderDrawRect(renner, &dst);
+
+            if(this->board.getState(y+7*x) != State::BLANK){
+                this->board.getState(y+7*x) == State::RED ? fieldColor = {200,50,0,0} : fieldColor = {240,200,0,0};
+                utilities::drawCircle(dst, fieldColor, this->renner);
+            }
         }
     }
 }

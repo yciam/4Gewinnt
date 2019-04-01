@@ -104,6 +104,12 @@
 		<Unit filename="/Users/yellow/CLionProjects/4gewinnt/src/State.h">
 			<Option target="4gewinnt"/>
 		</Unit>
+		<Unit filename="/Users/yellow/CLionProjects/4gewinnt/src/utilities.cpp">
+			<Option target="4gewinnt"/>
+		</Unit>
+		<Unit filename="/Users/yellow/CLionProjects/4gewinnt/src/utilities.h">
+			<Option target="4gewinnt"/>
+		</Unit>
 		<Unit filename="/Users/yellow/CLionProjects/4gewinnt/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

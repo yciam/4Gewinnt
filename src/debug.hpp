@@ -58,7 +58,7 @@
 
 
 #ifndef YELLOWDEBUG
-    #define YELLOWDEBUG 0
+    #define YELLOWDEBUG 2
 #endif
 #ifndef PROJECT_NAME
 #define PROJECT_NAME "undefined"
