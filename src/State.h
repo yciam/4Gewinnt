@@ -5,6 +5,9 @@
 #ifndef INC_4GEWINNT_STATE_H
 #define INC_4GEWINNT_STATE_H
 
+/**
+ * @enum State
+ */
 enum class State{
     BLANK,
     RED,

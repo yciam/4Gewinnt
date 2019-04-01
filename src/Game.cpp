@@ -31,6 +31,7 @@ Game::Game() {
         return;
     }
     SDL_SetWindowResizable(this->win, SDL_TRUE);
+    this->time = std::chrono::system_clock::now();
 }
 
 Game::~Game() {
@@ -48,6 +49,7 @@ void Game::run() {
         this->draw(this->board);
         this->doMove();
         this->running &= !this->board.checkWin();
+        this->showTime();
 
         SDL_RenderPresent(this->renner);
         SDL_Delay(1);
@@ -55,15 +57,13 @@ void Game::run() {
 }
 
 void Game::doMove() {
-    for(auto i = '1'; i <= '7' && !this->waitForRelease; i++){
-        if(this->keys[i]){
+    for(auto i = '1'; i <= '7' && !this->waitForRelease; i++)
+        if(this->keys[i])
             if(this->board.add(i-'0',this->player)){
                 this->player = this->player == State::RED ? State::YELLOW : State::RED;
                 this->waitForRelease = true;
                 return;
             }
-        }
-    }
 }
 
 void Game::handleEvents() {
@@ -105,4 +105,29 @@ void Game::checkRelease() {
         if(this->keys[i]) return;
     }
     this->waitForRelease = false;
+}
+
+void Game::showTime() {
+    auto d = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - this->time);
+    int wx, wy;
+    SDL_GetWindowSize(win, &wx, &wy);
+    TTF_Font *font = TTF_OpenFont("./../resources/fonts/UbuntuMono.ttf", wy/20);
+    if (font == nullptr) {
+        DEB_WAR(TTF_GetError())
+        return;
+    }
+    SDL_Surface *surf = TTF_RenderText_Blended(font, std::to_string(d.count()).c_str(), {255,255,255,0});
+    if (surf == nullptr) {
+        DEB_WAR(SDL_GetError())
+        TTF_CloseFont(font);
+        return;
+    }
+    SDL_Texture *text = SDL_CreateTextureFromSurface(renner, surf);
+    if (text == nullptr)
+        DEB_WAR(SDL_GetError())
+    SDL_FreeSurface(surf);
+    TTF_CloseFont(font);
+    SDL_Rect dst = {10,wy-wy/15,wx/10,wy/20};
+    SDL_QueryTexture(text, nullptr, nullptr, &dst.w, &dst.h);
+    SDL_RenderCopy(renner, text, nullptr, &dst);
 }

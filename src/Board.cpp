@@ -43,7 +43,6 @@ bool Board::checkWin() {
             }
         }
     }
-
     return !stillBlank;
 }
 

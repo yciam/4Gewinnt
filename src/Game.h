@@ -10,22 +10,54 @@
 #include <unordered_map>
 #include "Board.h"
 
+/**
+ * @class Game
+ * @brief Here the Game happens
+ */
 class Game {
 public:
+    /**
+     * @brief Constructor
+     */
     Game();
 
+    /**
+     * @brief Destructor
+     */
     ~Game();
 
+    /**
+     * @brief Call on time to run the game
+     */
     void run();
 
 private:
+
+    /**
+     * @brief Handles the events
+     */
     void handleEvents();
 
+    /**
+     * @brief Draws the Board
+     * @param board the Board you wanna draw
+     */
     void draw(Board board);
 
+    /**
+     * @brief Checks if the all keys you pressed are released
+     */
     void checkRelease();
 
+    /**
+     * @brief do a Move if a Key is pressed
+     */
     void doMove();
+
+    /**
+     * @brief Displays the time in the Bottom Left corner
+     */
+    void showTime();
 
     SDL_Window *win;
     SDL_Renderer *renner;
@@ -35,6 +67,7 @@ private:
     bool waitForRelease = false;
     Board board;
     State player = State::YELLOW;
+    std::chrono::time_point<std::chrono::system_clock> time;
 };
 
 

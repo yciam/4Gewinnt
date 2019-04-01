@@ -15,9 +15,3 @@ void utilities::drawCircle(SDL_Rect rect, SDL_Color color, SDL_Renderer* renner)
                 SDL_RenderDrawPoint(renner, x, y);
             }
 }
-
-
-
-void nothing(){
-    
-}
